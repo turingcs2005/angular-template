@@ -40,6 +40,7 @@ import { MultiChoicesComponent } from './form-controls/multi-choices/multi-choic
 import { SingleChoiceComponent } from './form-controls/single-choice/single-choice.component';
 import { SpinnerComponent } from './misce/spinner/spinner.component';
 import { TreeComponent } from './misce/tree/tree.component';
+import { SnackBarComponent } from './misce/snack-bar/snack-bar.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { TreeComponent } from './misce/tree/tree.component';
        MultiChoicesComponent,
        SingleChoiceComponent,
        SpinnerComponent,
-       TreeComponent
+       TreeComponent,
+       SnackBarComponent
   ],
   imports: [
     CommonModule, 
@@ -121,6 +123,9 @@ import { TreeComponent } from './misce/tree/tree.component';
     HttpClientModule,
 
     // exported components 
+    SpinnerComponent,
+    TreeComponent,
+    SnackBarComponent
   ],
   providers: [CurrencyPipe]
 })
