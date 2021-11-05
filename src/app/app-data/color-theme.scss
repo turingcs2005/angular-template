@@ -31,3 +31,6 @@ $accent600: mat-color($palette-accent, 600);
 $accent700: mat-color($palette-accent, 700);
 $accent800: mat-color($palette-accent, 800);
 $accent900: mat-color($palette-accent, 900);
+
+// 5% transparency
+$accent100-5: mat-color($palette-accent, 100, .05);

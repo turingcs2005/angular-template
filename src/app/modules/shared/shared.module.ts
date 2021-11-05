@@ -41,6 +41,7 @@ import { SingleChoiceComponent } from './form-controls/single-choice/single-choi
 import { SpinnerComponent } from './misce/spinner/spinner.component';
 import { TreeComponent } from './misce/tree/tree.component';
 import { SnackBarComponent } from './misce/snack-bar/snack-bar.component';
+import { MenuAndButtonComponent } from './examples/menu-and-button/menu-and-button.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { SnackBarComponent } from './misce/snack-bar/snack-bar.component';
        SingleChoiceComponent,
        SpinnerComponent,
        TreeComponent,
-       SnackBarComponent
+       SnackBarComponent,
+       MenuAndButtonComponent
   ],
   imports: [
     CommonModule, 
