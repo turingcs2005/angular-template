@@ -32,7 +32,7 @@ export class InputComponent implements OnInit {
               this.control.setValue(
                 /* remove all non-digit; remove leading 0's; format as currency (U.S. dollar with no cents); 
                   disable event emission to prevent infinite chain execution */
-                this.currencyPipe.transform(val.replace(/\D/g, '').replace(/^0+/, ''), 'USD', 'symbol', '1.0-0'), {emitEvent: false}
+                this.currencyPipe.transform(val.replace(/\D/g, '').replace(/^0{2,}/, '0'), 'USD', 'symbol', '1.0-0'), {emitEvent: false}
               );
             }
           });
