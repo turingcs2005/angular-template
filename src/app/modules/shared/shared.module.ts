@@ -42,6 +42,7 @@ import { SpinnerComponent } from './misce/spinner/spinner.component';
 import { TreeComponent } from './misce/tree/tree.component';
 import { SnackBarComponent } from './misce/snack-bar/snack-bar.component';
 import { MenuAndButtonComponent } from './examples/menu-and-button/menu-and-button.component';
+import { RadioGroupComponent } from './form-controls/radio-group/radio-group.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { MenuAndButtonComponent } from './examples/menu-and-button/menu-and-butt
        SpinnerComponent,
        TreeComponent,
        SnackBarComponent,
-       MenuAndButtonComponent
+       MenuAndButtonComponent,
+       RadioGroupComponent
   ],
   imports: [
     CommonModule, 
@@ -127,7 +129,8 @@ import { MenuAndButtonComponent } from './examples/menu-and-button/menu-and-butt
     // exported components 
     SpinnerComponent,
     TreeComponent,
-    SnackBarComponent
+    SnackBarComponent,
+    RadioGroupComponent
   ],
   providers: [CurrencyPipe]
 })
