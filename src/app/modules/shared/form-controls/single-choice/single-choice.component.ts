@@ -7,7 +7,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./single-choice.component.scss']
 })
 export class SingleChoiceComponent implements OnInit {
-
+  @Input() show = true;
   @Input() label = '';
   @Input() choices: string[] = [];
   @Input() control = new FormControl();

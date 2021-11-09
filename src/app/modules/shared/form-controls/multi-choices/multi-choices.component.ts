@@ -7,7 +7,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./multi-choices.component.scss']
 })
 export class MultiChoicesComponent implements OnInit {
-  
+  @Input() show = true; 
   @Input() label = '';
   @Input() choices: string[] = [];
   @Input() control = new FormControl();
